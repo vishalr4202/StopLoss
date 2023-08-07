@@ -228,7 +228,7 @@ exports.placeFirstTrade = (req, res, next) => {
             orders: [
               {
                 transaction_type: kc.TRANSACTION_TYPE_SELL,
-                quantity: 1,
+                quantity: quantity,
                 product: "NRML",
                 order_type: "MARKET",
                 price: ticks[0]?.last_price - Number(lossPrice),
